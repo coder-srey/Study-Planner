@@ -7,28 +7,21 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <!-- <link rel="stylesheet" href="studyPlanner/studyPlanner.css"> -->
+  <style>
+    h1{
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
 
 <nav class="navbar navbar-light bg-light">
   <div class="container-fluid">
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-      <!-- <li>
-        <div class="dropdown">
-            <button class="dropbtn" onclick="myFunction()">Dropdown
-            </button>
-            <div class="dropdown-content" id="myDropdown">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
-            </div>
-      </li> -->
-      <li><a href="members.html"><span class="glyphicon glyphicon-user"></span> Members</a></li>
-      <li><a href="resources.html"><span class="glyphicon glyphicon-briefcase"></span> Resources</a></li>
-      <li><a href="contact.html"><span class="glyphicon glyphicon-headphones"></span> Contact</a></li>
+      <li style="margin-right: 20px"><a href="StudyPlanner.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+      <li style="margin-right: 20px"><a href="members.html"><span class="glyphicon glyphicon-user"></span> Members</a></li>
+      <li style="margin-right: 20px"><a href="resources.html"><span class="glyphicon glyphicon-briefcase"></span> Resources</a></li>
+      <li style="margin-right: 20px"><a href="contact.html"><span class="glyphicon glyphicon-headphones"></span> Contact</a></li>
     </ul>
   </div>
 </nav> 
@@ -38,36 +31,39 @@
       <a class="navbar-brand" href="#"></a>
     </div>
     <ul class="nav navbar-nav">
-      <button class="btn">
-        <a href="#">
+      <button class="btn btn-primary">
+        <a href="#" style="color:white">
           Learn More
         </a>
       </button>
     </ul>
   </div>
 </nav>
-<div class="container">
-  <h1>Study Planner</h1>
-  <p>The NITC Study Planner is an efficient WebApp for students to plan their daily academic activities
+<div class="container" style="border-style: double;margin-top: 50px;border-radius: 20px;border-width: 5px;">
+  <h1>NITC STUDY PLANNER</h1>
+  <p style="font-size: 18px">The NITC Study Planner is an efficient WebApp for students to plan their daily academic activities
 effectively.With a lot of busy schedules, students can prioritize their scheduled activities with help of this
 system easily. The problem of forgetting personal daily goals,due dates or submission deadlines, test timings etc can be
 managed effectively by this system by generating notifications and setting reminders to the
-students. This system also helps students to remain productive throughout the entire day.</p>
+students. This system also helps students to remain productive throughout the entire day.Some of the features includes-</p>
+  <ul style="font-size: 18px">
+    <li>
+      View upcoming classes, assignments and quizzes.
+    </li>
+    <li>
+      View upcoming club events.
+    </li>
+    <li>
+      View the schedule of the class weekly.
+    </li>
+    <li>
+      Maintain a TODO list.
+    </li>
+    <li>
+      Faculties will be able to post classes, assignments and quizzes.
+    </li>
+  </ul>
 </div>
-
-<script>
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var myDropdown = document.getElementById("myDropdown");
-    if (myDropdown.classList.contains('show')) {
-      myDropdown.classList.remove('show');
-    }
-  }
-}
-</script>
 
 </body>
 </html>
