@@ -8,14 +8,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
   <style>
-    table, th, td {
+    /* table, th, td {
       border:1px solid black;
       border-collapse: collapse;
-    }
+    } */
+    
     th{
       font-size: 24px;
-      text-align: center;
       color: darkcyan;
     }
     th.Name{
@@ -29,10 +30,12 @@
       padding-bottom: 10px;
       padding-left: 50px;
       padding-right: 40px;
+      margin-left: 40px;
+      font-size: 16px;
     }
-
     td.Name{
       color: blueviolet;
+      padding-left: 30px;
     }
 
     td.Phone{
@@ -45,17 +48,18 @@
       margin-left: 230px;
       margin-right: auto;
     }
+    
   </style>
 </head>
 <body>
 
-<nav class="navbar navbar-light bg-light">
+<nav class="navbar navbar-light bg-light new">
   <div class="container-fluid">
     <ul class="nav navbar-nav navbar-right">
-      <li style="margin-right: 20px"><a href="./"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-      <li style="margin-right: 20px"><a href="members.html"><span class="glyphicon glyphicon-user"></span> Members</a></li>
-      <li style="margin-right: 20px"><a href="resources.html"><span class="glyphicon glyphicon-briefcase"></span> Resources</a></li>
-      <li style="margin-right: 20px"><a href="contact.html"><span class="glyphicon glyphicon-headphones"></span> Contact</a></li>
+      <li style="margin-right: 20px;font-size: 16px;"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+      <li style="margin-right: 20px;font-size: 16px;"><a href="members.html"><span class="glyphicon glyphicon-user"></span> Members</a></li>
+      <li style="margin-right: 20px;font-size: 16px;"><a href="resources.html"><span class="glyphicon glyphicon-briefcase"></span> Resources</a></li>
+      <li style="margin-right: 20px;font-size: 16px;"><a href="contact.html"><span class="glyphicon glyphicon-headphones"></span> Contact</a></li>
     </ul>
   </div>
 </nav> 
@@ -74,32 +78,36 @@
   </div>
 </nav>
 <div class="container" >
-    <table style="width:70%">
-  <tr>
-    <th class = "Name">Team Members</th>
-    <th class = "Phone">Phone</th>
-    <th>Email</th>
-  </tr>
+    <table class="table table-hover" style="width:70%;border-style: solid;border-color:black;border-radius: 10px;">
+    <thead>
+      <tr>
+        <th class = "Name">Team Members</th>
+        <th class = "Phone">Phone</th>
+        <th class = "email">Email</th>
+      </tr>
+</thead>
+<tbody> 
   <tr>
     <td class = "Name">Sreyansh Jain</td>
     <td class = "Phone">+91-8144460750</td>
-    <td><a href = "mailto: sreyansh_b191108cs@nitc.ac.in">sreyansh_b191108cs@nitc.ac.in</a></td>
+    <td class = "email"><a href = "mailto: sreyansh_b191108cs@nitc.ac.in">sreyansh_b191108cs@nitc.ac.in</a></td>
   </tr>
   <tr>
     <td class = "Name">Rahul Kumar Maurya</td>
     <td class = "Phone">+91-7317512219</td>
-    <td><a href = "mailto: rahul_b190816cs@nitc.ac.in">rahul_b190816cs@nitc.ac.in</a></td>
+    <td class = "email"><a href = "mailto: rahul_b190816cs@nitc.ac.in">rahul_b190816cs@nitc.ac.in</a></td>
   </tr>
   <tr>
     <td class = "Name">Rajkumar Kurami</td>
     <td class = "Phone">+91-9777640958</td>
-    <td><a href = "mailto: rajkumar_b190528cs@nitc.ac.in">rajkumar_b190528cs@nitc.ac.in</a></td>
+    <td class = "email"><a href = "mailto: rajkumar_b190528cs@nitc.ac.in">rajkumar_b190528cs@nitc.ac.in</a></td>
   </tr>
   <tr>
     <td class = "Name">Gokhale Mihir Madhav</td>
     <td class = "Phone">+91-8589037069</td>
-    <td><a href = "mailto: mihir_b190370cs@nitc.ac.in">mihir_b190370cs@nitc.ac.in</a></td>
+    <td class = "email"><a href = "mailto: mihir_b190370cs@nitc.ac.in">mihir_b190370cs@nitc.ac.in</a></td>
   </tr>
+</tbody>
 </table>
 </div>
 

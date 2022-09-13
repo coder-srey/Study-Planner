@@ -3,31 +3,30 @@
 <head>
   <title>Study planner</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <!-- <link rel="stylesheet" href="studyPlanner/studyPlanner.css"> -->
+  <link rel="stylesheet" href="style.css">
   <style>
-    table, th, td {
+    /* table, th, td {
       border:1px solid black;
       border-collapse: collapse;
-    }
+    } */
     th{
       font-size: 24px;
       text-align: center;
       color: darkcyan;
     }
     td{
-      padding-top: 10px;
-      padding-bottom: 10px;
-      padding-left: 50px;
-      padding-right: 40px;
+      text-align: center;
     }
 
     td.Name{
       color: blueviolet;
+      font-size: 16px;
     }
 
     div.container{
@@ -44,13 +43,13 @@
 </head>
 <body>
 
-<nav class="navbar navbar-light bg-light">
+<nav class="navbar navbar-light bg-light new">
   <div class="container-fluid">
     <ul class="nav navbar-nav navbar-right">
-      <li style="margin-right: 20px"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-      <li style="margin-right: 20px"><a href="members.html"><span class="glyphicon glyphicon-user"></span> Members</a></li>
-      <li style="margin-right: 20px"><a href="resources.html"><span class="glyphicon glyphicon-briefcase"></span> Resources</a></li>
-      <li style="margin-right: 20px"><a href="contact.html"><span class="glyphicon glyphicon-headphones"></span> Contact</a></li>
+      <li style="margin-right: 20px;font-size: 16px;"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+      <li style="margin-right: 20px;font-size: 16px;"><a href="members.html"><span class="glyphicon glyphicon-user"></span> Members</a></li>
+      <li style="margin-right: 20px;font-size: 16px;"><a href="resources.html"><span class="glyphicon glyphicon-briefcase"></span> Resources</a></li>
+      <li style="margin-right: 20px;font-size: 16px;"><a href="contact.html"><span class="glyphicon glyphicon-headphones"></span> Contact</a></li>
     </ul>
   </div>
 </nav> 
@@ -69,11 +68,14 @@
   </div>
 </nav>
 <div class="container" >
-    <table style="width:70%">
+    <table class="table table-hover" style="width:70%;border-style: solid;border-color:black;border-radius: 10px; ">
+      <thead>
   <tr>
     <th>Team Members</th>
     <th>Resume</th>
   </tr>
+</thead>
+<tbody>
   <tr>
     <td class = "Name">Sreyansh Jain</td>
     <td class = "pdf"><a href="Resumes/Myresume.pdf" style="font-size:18px"><i class="fa fa-file-pdf-o" style="font-size:30px;color:red"></i></a></td>
@@ -90,6 +92,7 @@
     <td class = "Name">Gokhale Mihir Madhav</td>
     <td class= "pdf"><a href="Resumes/Mihir.pdf" style="font-size:18px"><i class="fa fa-file-pdf-o" style="font-size:30px;color:red"></i> </a></td>
   </tr>
+</tbody>
 </table>
 </div>
 
