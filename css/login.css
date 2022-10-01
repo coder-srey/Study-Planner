@@ -10,21 +10,24 @@ span{
 	text-align:center;
 	margin:  15px;
 }
-a:link {
+a:link{
 	color: #000000;
 	background-color: transparent;
 	text-decoration: none;
 }
 
-a:hover {
+a:hover{
 	color: blue;
 	background-color: transparent;
 	text-decoration: underline;
 }
 div{
 	text-align: left;
+	position: relative;
+	left: 50px;
+	top: 20px;
 	background: rgb(255,255,255,0.6);
-	margin:3% 70% 2% 2%;
+	margin:3% 70% 20% 2%;
 	border:3px solid #000000;
 	border-radius: 15px;
 }
