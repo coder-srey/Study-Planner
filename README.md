@@ -3,7 +3,7 @@
 ## Visual Studio Code (VS Code):
 Visual Studio Code is a source-code editor by Microsoft, and we used it to edit the various Page and scripts as well as HTML/CSS.<br/>
 Download Link: [Download Visual Studio Code - Mac, Linux, Windows](https://code.visualstudio.com/download).
-- ## Steps to install
+ ## Steps to install
 1. Download the VS Code Installer for Windows.
 2. Run the Installer, and you can observe that Installer is Installed in
     C:\Users\ {Username}\AppData\ Local\Programs\Microsoft VS Code
